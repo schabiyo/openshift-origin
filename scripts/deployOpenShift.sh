@@ -37,10 +37,10 @@ echo $(date) " - Creating vhds container in PV Storage Account"
 azure telemetry --disable
 azure login --service-principal -u $AADCLIENTID -p $AADCLIENTSECRET --tenant $TENANTID
 
-echo "Sani"
+echo "Sani from remote"
 
 echo $STORAGEACCOUNT1
-#azure storage container create -a $STORAGEACCOUNT1 -k $SAKEY1 --container vhds
+azure storage container create -a $STORAGEACCOUNT1 -k $SAKEY1 --container vhds
 
 # Generate private keys for use by Ansible
 echo $(date) " - Generating Private keys for use by Ansible for OpenShift Installation"
