@@ -38,6 +38,8 @@ azure telemetry --disable
 azure login --service-principal -u $AADCLIENTID -p $AADCLIENTSECRET --tenant $TENANTID
 
 echo "Sani"
+
+echo $STORAGEACCOUNT1
 #azure storage container create -a $STORAGEACCOUNT1 -k $SAKEY1 --container vhds
 
 # Generate private keys for use by Ansible
